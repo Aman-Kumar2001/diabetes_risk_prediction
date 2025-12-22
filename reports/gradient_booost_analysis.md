@@ -44,3 +44,6 @@ learning_rate = 0.1
 max_iter = 300–500
 max_depth = 5–6
 min_samples_leaf = 20
+
+Best ROC_AUC score obtained = 0.723
+Best Log_loss score = 0.586
