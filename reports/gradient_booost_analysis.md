@@ -37,3 +37,10 @@ Performance Comparision of Logistic Regression, RandomForestClassifier and HistG
 Based on above table, Gradient Boosting is a correct fit for the model.
 
 The Precision–Recall curve for the Gradient Boosting model shows a consistent improvement over baseline models, maintaining precision levels of ~0.75–0.8.
+
+After tuning the Gradient Boost model, we have our best parameters as follows :-
+
+learning_rate = 0.1
+max_iter = 300–500
+max_depth = 5–6
+min_samples_leaf = 20
