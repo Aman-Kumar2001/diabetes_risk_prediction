@@ -33,6 +33,14 @@ class Patient(BaseModel):
 
 app = FastAPI()
 
+@app.get("/")
+def home_page():
+    return {"message" : "API is running."}
+
+@app.get("/health")
+def health_check():
+    return {"Status" : "OK"}
+
 @app.post("/predict")
 def predict(data: Patient):
     prob = predict_diabetes(data.model_dump())
